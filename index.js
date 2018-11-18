@@ -5,7 +5,7 @@
  */
 const mf    = require('mofron');
 
-mf.comp.ClockIf = class extends mf.Component {
+mf.comp.TimeIF = class extends mf.Component {
     
     /**
      * initialize component
@@ -15,27 +15,8 @@ mf.comp.ClockIf = class extends mf.Component {
     constructor (po) {
         try {
             super();
-            this.name('TimeIf');
+            this.name('TimeIF');
             this.prmOpt(po);
-        } catch (e) {
-            console.error(e.stack);
-            throw e;
-        }
-    }
-    
-    /**
-     * initialize dom contents
-     * 
-     * @param prm : 
-     */
-    initDomConts (prm) {
-        try {
-            /* set default string */
-            this.hour(this.hour());
-            this.minute(this.minute());
-            this.second(this.second());
-            this.millisec(this.millisec());
-            this.start();
         } catch (e) {
             console.error(e.stack);
             throw e;
@@ -144,6 +125,11 @@ mf.comp.ClockIf = class extends mf.Component {
      */
     start () {
         try {
+            this.hour(this.hour());
+            this.minute(this.minute());
+            this.second(this.second());
+            this.millisec(this.millisec());
+
             /* millisecond interval */
             setInterval(
                 (p1) => {
@@ -178,5 +164,5 @@ mf.comp.ClockIf = class extends mf.Component {
         }
     }
 }
-module.exports = mofron.comp.TimeIf;
+module.exports = mf.comp.TimeIF;
 /* end of file */

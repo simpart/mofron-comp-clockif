@@ -1,6 +1,6 @@
 {
   "name": "mofron-comp-timeif",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "time interface for time component",
   "main": "index.js",
   "scripts": {
