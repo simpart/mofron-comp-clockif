@@ -1,0 +1,22 @@
+{
+  "name": "mofron-comp-timeif",
+  "version": "0.0.1",
+  "description": "time interface for time component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpart/mofron-comp-timeif.git"
+  },
+  "keywords": [
+    "front-end"
+  ],
+  "author": "simparts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simpart/mofron-comp-timeif/issues"
+  },
+  "homepage": "https://github.com/simpart/mofron-comp-timeif#readme"
+}
